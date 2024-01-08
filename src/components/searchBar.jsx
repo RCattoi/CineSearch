@@ -15,8 +15,7 @@ const SearchBar = () => {
         method: 'GET',
         headers: {
           accept: 'application/json',
-          Authorization:
-            'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmZGU4NGYwYWVkYmVhZGQyMjRkNGU2ZGE1ZDVhNzAzNiIsInN1YiI6IjY1OGMyMTZiYjY4NmI5MjA0ZWRlNTlhZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.6XIc8wLH8Xp6Lp_3gC9V8oElHWgusJFJciEpfjZCH2g',
+          Authorization: import.meta.env.API_KEY,
         },
       };
       const fetchData = await request(
