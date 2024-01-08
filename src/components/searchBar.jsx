@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import useFetch from '../hooks/useFecth';
+import useFetch from '../hooks/useFetch';
 import Card from '../components/card';
 import Style from '../styles/search.module.css';
 
