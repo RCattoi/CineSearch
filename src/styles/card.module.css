@@ -1,0 +1,103 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container {
+  max-width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 20px 50px 20px;
+}
+
+.container .searchTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  flex: 0 1 90%;
+  color: white;
+}
+.movieCard {
+  display: flex;
+  width: 280px;
+  margin: 10px;
+  background-color: #76798275;
+  border-radius: 5px;
+  color: white;
+}
+.cardText {
+  margin-left: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 5px;
+}
+.img {
+  width: 100px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 5px 0px 0px 0px;
+  border-radius: 5px;
+}
+
+.genre {
+  background-color: blueviolet;
+  font-size: 0.85rem;
+  color: white;
+  border-radius: 5px;
+  padding: 3px 5px;
+  margin: 5px 5px 5px 0px;
+}
+
+.genreContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.votes::before {
+  content: url('../assets/imdb_svg.svg');
+  position: absolute;
+  top: -5px;
+  left: 32px;
+}
+.imdbDiv {
+  position: relative;
+  padding-left: 5px;
+  padding-top: 2px;
+  background-color: #f6c700;
+  border-radius: 5px;
+  width: 65px;
+
+  height: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.teste {
+  display: flex;
+  flex-direction: column;
+}
+
+.teste button {
+  height: 25px;
+  box-shadow: inset 0px 1px 3px 0px #91b8b3;
+  background: linear-gradient(to bottom, #9aa4aa 5%, #6c7c7c 100%);
+  background-color: #9aa4aa;
+  border: 1px solid #9aa4aa;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 5px 11px;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #2b665e;
+  margin-top: 5px;
+}
