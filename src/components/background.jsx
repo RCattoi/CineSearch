@@ -1,9 +1,13 @@
 import style from '../styles/background.module.css';
 
-function Background() {
+function Background(prop) {
+  let bg = '../assets/background.jpg';
+  if (prop.prop) {
+    bg = prop.prop;
+  }
   return (
     <>
-      <div className={style.background}></div>
+      <img src={bg} className={style.background}></img>
     </>
   );
 }
