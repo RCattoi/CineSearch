@@ -9,7 +9,6 @@ const Card = () => {
   const { search, searchMethod, setCurrentPage, currentPage, setSearchMethod } =
     useContext(searchBarContext);
   const data = search;
-  console.log(data);
   const type = searchMethod;
   if (data && data.length > 0) {
     data.map((e) => {
@@ -23,7 +22,6 @@ const Card = () => {
     setCurrentPage(e.nativeEvent.srcElement.name);
     setSearchMethod('load');
   };
-  console.log('rendering cards');
   return (
     <>
       {currentPage ? (

@@ -22,7 +22,6 @@ const SearchBar = () => {
       'https://api.themoviedb.org/3/movie/popular?language=en-US&page=1',
       options
     );
-    console.log('Fetching data...');
     setSearch(fetchData.json.results.slice(0, 12));
   }, [request, setSearch]);
 

@@ -30,7 +30,6 @@ const MoviePage = () => {
 
   useEffect(() => {
     fetchData();
-    // console.log('fez request');
   }, [fetchData]);
 
   useEffect(() => {
