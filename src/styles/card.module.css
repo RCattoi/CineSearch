@@ -60,7 +60,7 @@
   flex-wrap: wrap;
 }
 .votes::before {
-  content: url('../assets/imdb_svg.svg');
+  content: url('../../public/assets/imdb_svg.svg');
   position: absolute;
   top: -5px;
   left: 32px;

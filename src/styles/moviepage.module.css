@@ -59,7 +59,7 @@
 .movie_bugdet::before,
 .vote_count::before,
 .movie_revenue::before {
-  content: url('../assets/imdb_svg_details.svg');
+  content: url('../../public/assets/imdb_svg_details.svg');
   font-size: 1.3rem;
   position: absolute;
   left: -7px;
