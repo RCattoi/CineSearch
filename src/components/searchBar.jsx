@@ -5,13 +5,10 @@ import Card from '../components/card';
 import Style from '../styles/search.module.css';
 
 const SearchBar = () => {
-  // const [search, setSearch] = useState('');
-  // const [searchMethod, setSearchMethod] = useState('load');
   const [searchTerm, setSearchTerm] = useState();
   const { request } = useFetch();
 
-  const { setSearch, setSearchMethod } =
-    useContext(searchBarContext);
+  const { setSearch, setSearchMethod } = useContext(searchBarContext);
 
   const fetch = useCallback(async () => {
     const options = {
@@ -32,7 +29,7 @@ const SearchBar = () => {
   useEffect(() => {
     fetch();
   }, [fetch]);
-  // console.log(search);
+
   const callback = async (e) => {
     const options = {
       method: 'GET',
@@ -48,7 +45,6 @@ const SearchBar = () => {
     );
     setSearch(resp.json.results);
     setSearchMethod(searchTerm);
-
   };
 
   return (

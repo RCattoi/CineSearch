@@ -164,7 +164,6 @@ const MoviePage = () => {
       ) : null}
     </>
   );
-  // }
 };
 
 export default MoviePage;

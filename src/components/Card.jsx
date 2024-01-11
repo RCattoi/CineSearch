@@ -11,7 +11,6 @@ const Card = () => {
   const data = search;
   console.log(data);
   const type = searchMethod;
-  // console.log(data);
   if (data && data.length > 0) {
     data.map((e) => {
       if (e.genre_ids) {
