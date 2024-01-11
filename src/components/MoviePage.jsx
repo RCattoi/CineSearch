@@ -58,23 +58,7 @@ const MoviePage = () => {
           'hulu',
           'disney',
         ];
-        // const stream = {
-        //   json: {
-        //     result: {
-        //       streamingInfo: {
-        //         us: [
-        //           { service: 'netflix', type: 'rental' },
-        //           { service: 'apple', type: 'fuckou' },
-        //           { service: 'hbo', type: 'fuckou' },
-        //           { service: 'hulu', type: 'fuckou' },
-        //           { service: 'mubi', type: 'fuckou' },
-        //           { service: 'peacock', type: 'fuckou' },
-        //           { service: 'prime', type: 'fuckou' },
-        //         ],
-        //       },
-        //     },
-        //   },
-        // };
+  
         if (stream.json.result.streamingInfo.us) {
           const streaming = stream.json.result.streamingInfo.us.filter((e) => {
             return services.includes(e.service);
