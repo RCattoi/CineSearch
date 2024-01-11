@@ -57,7 +57,7 @@ const MoviePage = () => {
           'hulu',
           'disney',
         ];
-  
+
         if (stream.json.result.streamingInfo.us) {
           const streaming = stream.json.result.streamingInfo.us.filter((e) => {
             return services.includes(e.service);
@@ -72,10 +72,7 @@ const MoviePage = () => {
   }, [request, imdbID, movieData]);
 
   useEffect(() => {
-    if (
-      searchMethod !== 'load' &&
-      currentPage !== null
-    ) {
+    if (searchMethod !== 'load' && currentPage !== null) {
       setMovieData(null);
       setCurrentPage(null);
     }
@@ -137,9 +134,7 @@ const MoviePage = () => {
                       return (
                         <>
                           <div className={style.individualStreaming}>
-                            <img
-                              src={`src/assets/streaming_logo/${e.service}.svg`}
-                            ></img>
+                            <img src={`./assets/${e.service}.svg`}></img>
                             <span>{e.streamingType}</span>
                           </div>
                         </>
