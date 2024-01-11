@@ -1,7 +1,7 @@
 import { useEffect, useState, useContext, useCallback } from 'react';
 import { searchBarContext } from '../context/mycontext';
 import useFetch from '../hooks/useFetch';
-import Card from '../components/card';
+import Card from '../components/Card';
 import Style from '../styles/search.module.css';
 
 const SearchBar = () => {
